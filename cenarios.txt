@@ -1,0 +1,8 @@
+Cenários
+    Dado que temos um visitante qualquer
+    Quando ele acessa o edereço /inscricao/
+    Então ele vê a página de inscrição
+        e a página possui um formulário
+        e o formulário possui 4 campos
+        e os campos são nome, email, cpf e telefone
+        e o formulário possui um botão para se inscrever.
