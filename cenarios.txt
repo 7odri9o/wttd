@@ -1,4 +1,6 @@
 Cenários
+
+Cenário: Acessar a página de inscrição
     Dado que temos um visitante qualquer
     Quando ele acessa o edereço /inscricao/
     Então ele vê a página de inscrição
@@ -6,3 +8,18 @@ Cenários
         e o formulário possui 4 campos
         e os campos são nome, email, cpf e telefone
         e o formulário possui um botão para se inscrever.
+
+
+Cenário: Efetuar a inscrição com sucesso
+    Dado que um visitante acessa a página /inscricao/
+    Qunado ele preenche o formulário
+        e nome, cpf, email e telefone são informados
+        e ele clica em enviar
+    Então o sistema envia um email de confirmação
+        e o remetente é contato@eventex.com.br
+        e o destinatário é o visitante
+        e o remetente está em cópia carbono
+        e o visitante é redirecionado para /inscricao/
+        e o visitante vê uma mensagem de sucesso.
+
+
