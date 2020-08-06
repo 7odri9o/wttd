@@ -18,7 +18,7 @@ git clone git@gitlab.com:courses-rodrigo-rocha/welcome-to-the-django/wttd.git wt
 cd wttd
 python -m venv .wttd
 source .wttd/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test
 ```
