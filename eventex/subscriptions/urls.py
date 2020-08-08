@@ -6,5 +6,5 @@ app_name = 'subscriptions'
 
 urlpatterns = [
     path('', new, name='new'),
-    path('<int:pk>/', detail, name='detail'),
+    path('<uuid:pk>/', detail, name='detail'),
 ]
