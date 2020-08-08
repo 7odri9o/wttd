@@ -1,3 +1,5 @@
+import uuid
+
 from django.test import TestCase
 from django.shortcuts import resolve_url as r
 
@@ -37,5 +39,5 @@ class SubscriptionDetailGet(TestCase):
 
 class SubscriptionDetailNotFound(TestCase):
     def test_not_found(self):
-        resp = self.client.get(r('subscriptions:detail', 0))
+        resp = self.client.get(r('subscriptions:detail', uuid.uuid4()))
         self.assertEqual(404, resp.status_code)
