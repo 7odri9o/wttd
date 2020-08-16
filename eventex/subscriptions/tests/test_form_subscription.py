@@ -24,6 +24,12 @@ class SubscriptionFormTest(TestCase):
         form = make_validated_form(cpf='ABCD5678901')
         self.assertFormErrorCode(form, 'cpf', 'digits')
 
+    def test_name_must_be_capitalized(self):
+        """Name must be capitalized"""
+        # NOME sobrenome -> Nome Sobrenome
+        form = make_validated_form(name='NOME sobrenome')
+        self.assertEqual('Nome Sobrenome', form.cleaned_data['name'])
+
     def test_cpf_has_11_digits(self):
         """CPF must have 11 digitis."""
         form = make_validated_form(cpf='1234')
