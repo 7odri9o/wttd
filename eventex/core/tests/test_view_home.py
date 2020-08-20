@@ -23,9 +23,9 @@ class HomeTest(TestCase):
         """Must show keynote speakers"""
         contents = [
             'Grace Hopper',
-            'img/hopper',
+            'hopper-pic',
             'Alan Turing',
-            'img/turing'
+            'turing-pic'
         ]
         for expected in contents:
             with self.subTest():
