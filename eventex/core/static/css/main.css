@@ -364,4 +364,13 @@ section header h2 {
     background-color: #DFF0D8;
     border-color: #D0E9C6;
 }
+
+.speakers h2 {
+    text-transform: uppercase;
+}
+
+.speakers img {
+    width: 200px;
+    border-radius: 100%;
+}
 /* Fim Customização */
