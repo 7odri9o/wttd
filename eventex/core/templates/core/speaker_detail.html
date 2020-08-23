@@ -4,9 +4,11 @@
 <section>
   <div class="speakers content row padding-bottom-3 desktop-8 container">
     <h2>
-        <a href="{{ speaker.website }}">{{ speaker.name }}</a>
+      <a href="{{ speaker.website }}", target="_blank">{{ speaker.name }}</a>
     </h2>
-    <img class="photo" src="{{ speaker.photo }}">
+    <a href="{{ speaker.website }}", target="_blank">
+      <img class="photo" src="{{ speaker.photo }}">
+    </a>
     <p>
       {{ speaker.description|linebreaks }}
     </p>
